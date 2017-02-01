@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos", "Cosmos\Cosmos.csproj", "{B3262A38-4163-42E4-A184-711C0A098BEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosmos.Sample", "Cosmos.Sample\Cosmos.Sample.csproj", "{3C99E34F-6109-4F24-9A08-1036F0F4849F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,17 @@ Global
 		{B3262A38-4163-42E4-A184-711C0A098BEA}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{B3262A38-4163-42E4-A184-711C0A098BEA}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{B3262A38-4163-42E4-A184-711C0A098BEA}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Release|Any CPU.Build.0 = Release|iPhone
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Release|iPhone.Build.0 = Release|iPhone
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{3C99E34F-6109-4F24-9A08-1036F0F4849F}.Debug|iPhone.Build.0 = Debug|iPhone
 	EndGlobalSection
 EndGlobal

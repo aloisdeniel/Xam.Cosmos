@@ -13,21 +13,21 @@
        <description>Xamarin.iOS bindings for Cosmos library (rating control).</description>
        <summary>Xamarin.iOS bindings for Cosmos library (rating control).</summary>
      <tags>iOS, Xamarin, bindings, rating, stars</tags>
+     <dependencies>
+          <dependency id="Xamarin.Swift3" version="3.0.0"  />
+          <dependency id="Xamarin.Swift3.Core" version="3.0.2"  />
+          <dependency id="Xamarin.Swift3.CoreGraphics" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.CoreImage" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.Darwin" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.Dispatch" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.Foundation" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.ObjectiveC" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.QuartzCore" version="3.0.2" />
+          <dependency id="Xamarin.Swift3.UIKit" version="3.0.2" />
+      </dependencies>
    </metadata>
    <files>
      <!-- iOS -->
-     <file src="..\Sources\Cosmos\bin\Release\Cosmos.dll" target="lib\Xamarin.iOS10\Cosmos.dll" />
+     <file src="../Sources/Cosmos/bin/Release/Cosmos.dll" target="lib/Xamarin.iOS10/Cosmos.dll" />
    </files>
-   <dependencies>
-        <dependency id="Xamarin.Swift3" version="3.0.0"  />
-        <dependency id="Xamarin.Swift3.Core" version="3.0.2"  />
-        <dependency id="Xamarin.Swift3.CoreGraphics" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.CoreImage" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.Darwin" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.Dispatch" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.Foundation" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.ObjectiveC" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.QuartzCore" version="3.0.2" />
-        <dependency id="Xamarin.Swift3.UIKit" version="3.0.2" />
-    </dependencies>
 </package>
