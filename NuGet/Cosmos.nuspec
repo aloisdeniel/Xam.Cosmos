@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+   <metadata minClientVersion="2.8.1">
+       <id>Cosmos</id>
+       <version>$version$</version>
+       <title>Cosmos</title>
+       <authors>Aloïs Deniel</authors>
+       <owners>Aloïs Deniel</owners>
+     <licenseUrl>https://github.com/aloisdeniel/CosmosXamarin/blob/master/LICENSE</licenseUrl>
+     <projectUrl>https://github.com/aloisdeniel/CosmosXamarin</projectUrl>
+     <iconUrl>https://raw.githubusercontent.com/aloisdeniel/CosmosXamarin/master/Documentation/Logo.png</iconUrl>
+       <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <description>Xamarin.iOS bindings for Cosmos library (rating control).</description>
+       <summary>Xamarin.iOS bindings for Cosmos library (rating control).</summary>
+     <tags>iOS, Xamarin, bindings, rating, stars</tags>
+   </metadata>
+   <files>
+     <!-- iOS -->
+     <file src="..\Sources\Cosmos\bin\Release\Cosmos.dll" target="lib\Xamarin.iOS10\Cosmos.dll" />
+   </files>
+   <dependencies>
+        <dependency id="Xamarin.Swift3" version="3.0.0"  />
+        <dependency id="Xamarin.Swift3.Core" version="3.0.2"  />
+        <dependency id="Xamarin.Swift3.CoreGraphics" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.CoreImage" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.Darwin" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.Dispatch" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.Foundation" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.ObjectiveC" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.QuartzCore" version="3.0.2" />
+        <dependency id="Xamarin.Swift3.UIKit" version="3.0.2" />
+    </dependencies>
+</package>
