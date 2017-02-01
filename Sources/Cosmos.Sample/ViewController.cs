@@ -16,12 +16,27 @@ namespace Cosmos.Sample
 		{
 			base.ViewDidLoad();
 
-			var frame = new CGRect(0, 100, 500, 100);
-			var cosmos = new CosmosView(frame);
-			CosmosSettingsObjCBridge.SetEmptyBorderColor(UIColor.Red, cosmos);
-			CosmosSettingsObjCBridge.SetFilledColor(UIColor.Red, cosmos);
-			CosmosSettingsObjCBridge.SetStarSize(50, cosmos);
+			// Initialization
+			var cosmos = new CosmosView()
+			{
+				Frame = CGRect.Inflate(this.View.Frame, -10, -10),
+				AutoresizingMask = UIViewAutoresizing.FlexibleDimensions,
+				BackgroundColor = UIColor.LightGray,
+			};
+
+			// Settings
+			cosmos.Settings().FillMode = FillMode.Precise;
+			cosmos.Settings().UpdateOnTouch = true;
+			cosmos.Settings().EmptyBorderColor = UIColor.DarkGray;
+			cosmos.Settings().EmptyBorderWidth = 2;
+			cosmos.Settings().FilledColor = UIColor.Purple;
+			cosmos.Settings().FilledBorderColor = UIColor.Purple;
+			cosmos.Settings().StarSize = 50;
+			cosmos.Settings().StarMargin = 8;
+
+			// Events
 			cosmos.DidFinishTouchingCosmos += (v) => { cosmos.Text = v.ToString(); };
+
 			this.View.AddSubview(cosmos);
 			// Perform any additional setup after loading the view, typically from a nib.
 		}

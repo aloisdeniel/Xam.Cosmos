@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
    <metadata minClientVersion="2.8.1">
-       <id>Cosmos</id>
+       <id>Xam.Cosmos</id>
        <version>$version$</version>
-       <title>Cosmos</title>
+       <title>Cosmos for Xamarin.iOS</title>
        <authors>Aloïs Deniel</authors>
        <owners>Aloïs Deniel</owners>
      <licenseUrl>https://github.com/aloisdeniel/CosmosXamarin/blob/master/LICENSE</licenseUrl>
