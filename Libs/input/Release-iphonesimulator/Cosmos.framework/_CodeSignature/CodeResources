@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Cosmos-Swift.h</key>
 		<data>
-		Xd5O7ythzrDVbn9WrzRULwEK6Fw=
+		psYZVzw/pSXOFmk0SrIY0uODy4I=
 		</data>
 		<key>Headers/Cosmos.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HYxO933qBTofHDBLBTma93z13aw=
+		2yIu8RuzeXp939dFCRKqeyLc1Ng=
 		</data>
 		<key>Modules/Cosmos.swiftmodule/i386.swiftdoc</key>
 		<data>
-		EeqthzrB2LGZxyWUtLCwTYBL2Xg=
+		bshn/VgrQQGyeKbKeaTS1mhW6Fo=
 		</data>
 		<key>Modules/Cosmos.swiftmodule/i386.swiftmodule</key>
 		<data>
-		/I+bWf+Ovldr6uFubq6ZN73PRC4=
+		kohDVwY+/rVDhf/4jyEbSjb2ddo=
 		</data>
 		<key>Modules/Cosmos.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		586JEVB9jZlg42elZoQ/T32MrUY=
+		ySGtBr3LF+eiOeSRftLxgp5DVRQ=
 		</data>
 		<key>Modules/Cosmos.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		f6SAtHwGpljwrxVC/4TS0off/Gk=
+		WIulmPVHBZ43RYUFE+bCEZAQi4M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xd5O7ythzrDVbn9WrzRULwEK6Fw=
+			psYZVzw/pSXOFmk0SrIY0uODy4I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y2w+XJMAmiTdScjj9XCbteP7DfMbEaQKjxtPDey/fkk=
+			a765cDpEKZrYNt3Yf+pVEYel3oiJ3EUp0e3suHaZPUI=
 			</data>
 		</dict>
 		<key>Headers/Cosmos.h</key>
@@ -65,44 +65,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EeqthzrB2LGZxyWUtLCwTYBL2Xg=
+			bshn/VgrQQGyeKbKeaTS1mhW6Fo=
 			</data>
 			<key>hash2</key>
 			<data>
-			QQfsiOPvcIFGadzrbbJ35jTAZM8ZJocULBLMVdvvsVs=
+			caa2zQ+vRYyF9hle/orezBU2xyS8gsnT82n5tRPi+Tc=
 			</data>
 		</dict>
 		<key>Modules/Cosmos.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/I+bWf+Ovldr6uFubq6ZN73PRC4=
+			kohDVwY+/rVDhf/4jyEbSjb2ddo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/7gvEpIS83b19NKp4Bm/u1BlF2xM9zDCNdyQ+6/THQI=
+			O7ktZTrCKmWkBlKI4WpT+UUGq9/E0qbatKJdSh/EhaE=
 			</data>
 		</dict>
 		<key>Modules/Cosmos.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			586JEVB9jZlg42elZoQ/T32MrUY=
+			ySGtBr3LF+eiOeSRftLxgp5DVRQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			jXrLIrFBrZFJgleqb+YGKFhJld4KkXT7EadMnP+IhWs=
+			CU9Ufw/2op2YPRoROdw7kg4gdDUpy+vdIUizHaEagkc=
 			</data>
 		</dict>
 		<key>Modules/Cosmos.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f6SAtHwGpljwrxVC/4TS0off/Gk=
+			WIulmPVHBZ43RYUFE+bCEZAQi4M=
 			</data>
 			<key>hash2</key>
 			<data>
-			aV1X0i7xi+hia4cStppe0O6o9U/LacJB/iOsGT/rE3o=
+			DvIO3bBhbdbuFN7ynSd4hKIxtFOXiXTjYXLFC7lnD10=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -16,9 +16,13 @@ namespace Cosmos.Sample
 		{
 			base.ViewDidLoad();
 
-			var cosmos = new CosmosView(new CGRect(0,0,100,20));
+			var frame = new CGRect(0, 100, 500, 100);
+			var cosmos = new CosmosView(frame);
+			CosmosSettingsObjCBridge.SetEmptyBorderColor(UIColor.Red, cosmos);
+			CosmosSettingsObjCBridge.SetFilledColor(UIColor.Red, cosmos);
+			CosmosSettingsObjCBridge.SetStarSize(50, cosmos);
+			cosmos.DidFinishTouchingCosmos += (v) => { cosmos.Text = v.ToString(); };
 			this.View.AddSubview(cosmos);
-
 			// Perform any additional setup after loading the view, typically from a nib.
 		}
 

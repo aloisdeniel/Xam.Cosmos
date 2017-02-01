@@ -115,12 +115,252 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_UNAVAILABLE __attribute__((unavailable))
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import ObjectiveC;
 @import UIKit;
 @import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class CosmosView;
+@class UIColor;
+@class UIFont;
+
+/**
+  This is a sample file that can be used in your ObjC project if you want to change Cosmos View settings.
+  Extend this file to add other functionality for your app.
+  <h2>How to use</h2>
+  <ol>
+    <li>
+      Import swift code in your ObjC file:
+    </li>
+  </ol>
+  #import “YOUR_PRODUCT_MODULE_NAME-Swift.h”
+  <ol>
+    <li>
+      Use Auk in your ObjC code:
+    </li>
+  </ol>
+  <ul>
+    <li>
+      (void)viewDidLoad {
+      [super viewDidLoad];
+    </li>
+  </ul>
+  [CosmosSettingsObjCBridge setStarSize:30 inCosmosView:self.cosmosView];
+  [CosmosSettingsObjCBridge setFillMode: 0 inCosmosView: self.cosmosView];
+  [CosmosSettingsObjCBridge setFilledColor: [UIColor redColor] inCosmosView:self.cosmosView];
+  [CosmosSettingsObjCBridge setUpdateOnTouch: NO inCosmosView:self.cosmosView];
+*/
+SWIFT_CLASS("_TtC6Cosmos24CosmosSettingsObjCBridge")
+@interface CosmosSettingsObjCBridge : NSObject
+/**
+  Set the star fill mode. A fill mode defines how the star is filled when the rating value is not a whole integer. It can either show full stars, half stars or stars partially filled according to the rating value.
+  \param value Value of the fill mode. 0: full, 1: half, 2: precise.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setFillMode:(NSInteger)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Get the star fill mode. A fill mode defines how the star is filled when the rating value is not a whole integer. It can either show full stars, half stars or stars partially filled according to the rating value.
+  \param cosmosView A CosmosView object.
+
+*/
++ (NSInteger)getFillMode:(CosmosView * _Nonnull)cosmosView;
+/**
+  When \code
+  true
+  \endcode the star fill level is updated when user touches the cosmos view. When \code
+  false
+  \endcode the Cosmos view only shows the rating and does not act as the input control.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setUpdateOnTouch:(BOOL)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  When \code
+  true
+  \endcode the star fill level is updated when user touches the cosmos view. When \code
+  false
+  \endcode the Cosmos view only shows the rating and does not act as the input control.
+  \param cosmosView A CosmosView object.
+
+*/
++ (BOOL)getUpdateOnTouch:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the size of a single star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setStarSize:(double)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the size of a single star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (double)getStarSize:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the maximum number of stars to be shown.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setTotalStars:(NSInteger)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the maximum number of stars to be shown.
+  \param cosmosView A CosmosView object.
+
+*/
++ (NSInteger)getTotalStars:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the distance between stars.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setStarMargin:(double)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the distance between stars.
+  \param cosmosView A CosmosView object.
+
+*/
++ (double)getStarMargin:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the background color of a filled star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setFilledColor:(UIColor * _Nonnull)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the background color of a filled star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (UIColor * _Nonnull)getFilledColor:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the background color of an empty star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setEmptyColor:(UIColor * _Nonnull)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the background color of an empty star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (UIColor * _Nonnull)getEmptyColor:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the width of the border for a filled star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setFilledBorderWidth:(double)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the width of the border for a filled star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (double)getFilledBorderWidth:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the border color of a filled star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setFilledBorderColor:(UIColor * _Nonnull)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the border color of a filled star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (UIColor * _Nonnull)getFilledBorderColor:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the width of the border for an empty star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setEmptyBorderWidth:(double)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the width of the border for an empty star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (double)getEmptyBorderWidth:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the border color of an empty star.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setEmptyBorderColor:(UIColor * _Nonnull)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the border color of an empty star.
+  \param cosmosView A CosmosView object.
+
+*/
++ (UIColor * _Nonnull)getEmptyBorderColor:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the color of the text.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setTextColor:(UIColor * _Nonnull)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the color of the text.
+  \param cosmosView A CosmosView object.
+
+*/
++ (UIColor * _Nonnull)getTextColor:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the font of the text.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setTextFont:(UIFont * _Nonnull)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the font of the text.
+  \param cosmosView A CosmosView object.
+
+*/
++ (UIFont * _Nonnull)getTextFont:(CosmosView * _Nonnull)cosmosView;
+/**
+  Set the distance between the text and the stars.
+  \param value The value of the setting.
+
+  \param cosmosView A CosmosView object.
+
+*/
++ (void)setTextMargin:(double)value inCosmosView:(CosmosView * _Nonnull)cosmosView;
+/**
+  Returns the distance between the text and the stars.
+  \param cosmosView A CosmosView object.
+
+*/
++ (double)getTextMargin:(CosmosView * _Nonnull)cosmosView;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSCoder;
 @class UITouch;
 @class UIEvent;
